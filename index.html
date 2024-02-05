@@ -10,7 +10,16 @@
 <body>
     
     <div id="app">
+        <ul class="list-unstyled text-center ">
+            <li v-for="(mail, index) in generatedMails">
+                {{mail}}
+            </li>
+        </ul>
 
+        <div class="text-center">
+            <button class="btn btn-primary" @click="generaListaMail">Genera lista</button>
+
+        </div>
     </div>
 
 
