@@ -11,7 +11,7 @@
     
     <div id="app">
         <ul class="list-unstyled text-center ">
-            <li v-for="(mail, index) in generatedMails">
+            <li v-if="generatedMails.length == 10" v-for="(mail, index) in generatedMails">
                 {{mail}}
             </li>
         </ul>
